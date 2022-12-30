@@ -1,0 +1,505 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Muli, sans-serif;
+}
+body{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+header{
+    display: flex;
+    padding: 0 5%;
+    height: 50px;
+    align-items:center;
+    justify-content:space-between;
+    background-color:teal;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2000;
+}
+.menu-btn{
+    display: none;
+}
+span{
+    font-size: 18px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.logo{
+    min-width: 150px;
+}
+header nav{
+    display: flex;
+    gap: 20px;
+    /* margin-left: 30%; */
+}
+
+nav a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+.icon-wrapper{
+    display: flex;
+    gap: 15px;
+    color: whitesmoke
+}
+.circle{
+    padding: 10px;
+    border-radius: 100%;
+    border: 1px solid black;
+    font-size: 10px;
+}
+.circle:hover{
+    background-color: cadetblue;
+}
+
+/* ---------------start of mobile menu-------------- */
+/* .mobile-menu{
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    cursor: pointer;
+    padding: 0;
+    display: none;
+} */
+/* ---------------end of mobile menu-------------- */
+
+/* --------------start of mobile nav------------------- */
+/* .main-desktop-nav{
+     position: fixed; 
+    width: 350px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+} */
+
+/* --------------end of mobile nav------------------- */
+
+.banner{
+    display: flex;
+    padding-top: 10px;
+    min-height: 450px;
+    background-color:cadetblue;
+    color: whitesmoke;
+    width: 100%;
+}
+.banner-baby{
+    margin: 50px;
+    min-width: 20px;
+    flex-direction: column;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.banner-baby h1{
+    font-size: 60px;
+    font-weight: lighter;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.banner-baby p{
+    font-size: 25px;
+    font-weight: 500;
+    font-family:sans-serif;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+.banner-baby button{
+    border: none;
+    height: 50px;
+    /* width: 100px; */
+    font-size: large;
+    padding: 20px 35px;
+    font-weight: 500;
+}
+.banner-baby button:hover{
+    background-color:darkslategray;
+    color: white;
+}
+    .banner-img{
+    position: relative;
+}
+.card{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    padding-top: 30px;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+}
+.card img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position:inherit;
+    border-radius: 50%;
+}
+.me{
+   text-align: center;
+   padding: 50px;
+   text-transform: capitalize;
+}
+.me h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.specializations{
+    display: flex;
+    justify-content: center;
+    padding: 20px 10%;
+    gap: 30px;
+}
+.specialties{
+    flex: 1;
+    background: white;
+    border: 1px solid gray;
+    min-height: 250px;
+    text-align: center;
+    padding: 12px;
+    box-shadow: 3px 3px grey;
+    border-radius: 4px;
+}
+.specialties:hover{
+    border: 1px solid indigo;
+}
+.specialties h3{
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    font-family: sans-serif;
+    font-weight: 12px;
+}
+.specialties p{
+    font-family:monospace;
+    font-size: 15px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    text-align: center;
+    column-gap: 30px;
+}
+.about-me{
+    display: flex;
+    text-align:left;
+    justify-content:center;
+    flex-direction: column;
+}
+.about-me p{
+    line-height: 30px;
+}
+.about-me h3{
+    line-height: 30px;
+    font-size: 35px;
+    font-family: cursive;
+    padding-bottom: 20px;
+}
+.about-mee{
+    padding: 100px 0;
+}
+.about-mee img{
+    position: relative;
+    height: auto;
+    width: 350px;
+    border-radius: 15px;
+    border: 1px solid slategray;
+    box-shadow: 2px 2px slategrey;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    min-height: 500px;
+    align-items:center;
+    justify-content:center;
+    line-height: 50px;
+    background-color:rgb(15, 54, 54);
+    color: white;
+}
+.footer-words{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+footer p{
+    font-family:sans-serif;
+}
+.footer-words button{
+    padding: 20px 55px;
+    /* width: 100px; */
+    background-color: teal;
+    border: none;
+}
+footer button:hover{
+    background-color:slategray;
+    border: 2px dotted teal;
+}
+.footer-links{
+    display: flex;
+    min-height: 50px;
+    width: 100%;
+    justify-content:space-between;
+    border-bottom: 1px solid gray;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+.footer-font{
+    display: flex;
+    gap: 10px;
+}
+.footer-font i{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid darkslategrey;
+    border-radius: 100%;
+}
+.footer-font i:hover{
+    background-color: teal;
+    border-radius: 100%;
+}
+.copyright{
+    font-weight: lighter;
+    font-size: 13px;
+}
+.meee{
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    text-transform: capitalize;
+}
+.meee h1{
+    font-family: cursive;
+    font-weight: bolder;
+}
+.statement{
+    display: flex;
+    justify-content: center;
+    /* height: 350px; */
+    gap: 200px;
+    padding: 50px;
+}
+.mission{
+    width: 250px;
+    border: 1px solid slategray;
+    border-radius: 20px;
+    /* text-align: center; */
+    box-shadow: 3px 3px rgb(75, 75, 75);
+    padding: 20px;
+}
+.mission:hover{
+    background-color: rgb(201, 199, 199);
+}
+.mission h2{
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+    font-weight: lighter;
+    font-family: fantasy;
+}
+.mission p{
+    padding-bottom: 20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bannnerrr{
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    color:whitesmoke ;
+}
+.my-contact{
+    min-height: 50px;
+}
+.touch{
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-height: 250px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+.contact a{
+    text-decoration: none;
+    color:rgb(45, 56, 26);
+}
+.email{
+    display: flex;
+}
+.mail img{
+    height: 34px;
+    width: 30px;
+}
+#fa{
+    padding-right: 10px;
+}
+
+/* ----------------start of media query---------------------- */
+@media (min-width:200px) and (max-width:768px){
+ /* .main-desktop-nav{
+    display: none;
+}
+.mobile-menu{
+    display: initial;
+} */
+.banner-baby h1{
+    font-size: 30px;
+}
+.banner-baby button{
+    font-size: 16px;
+    text-transform: capitalize;
+    /* padding: 20px 45px !important; */
+}
+.banner{
+    line-height: 80px;
+    text-transform: capitalize;
+}
+.banner .card img{
+    display: none;
+}
+.menu-btn{
+    display: block;
+}
+header nav{
+    position: absolute;
+    background: black;
+    height:300px;
+    right: 0;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    transform: translateX(500px);
+    transition: all 0.5s ease-in 0.2s;
+}
+header nav a{
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    padding-top: 15px;
+}
+header nav.show{
+    transform: translateX(0px);
+    transition: all 0.5s ease-in-out 0.2s; 
+}
+.icon-wrapper{
+    display: none;
+}
+.specializations{
+    display: flex;
+    flex-direction: column;
+}
+.specialties p{
+    font-size: 1.399rem;
+}
+.specialties h3{
+    font-size: 1.9rem;
+}
+.specialties img{
+    height: 70px;
+}
+.about{
+    flex-direction: column;
+}
+.about-me h3{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 40px;
+
+}
+.about-me p {
+    font-size: 1.6rem;
+    padding: 20px 20px;
+    line-height: 40px;
+    padding-bottom: 40px;
+}
+footer h1{
+    font-size: 32px;
+    text-align: center;
+    padding: 30px;
+}
+.footer-links{
+    /* flex-direction: column; */
+    border-bottom: none;
+    /* justify-content: center; */
+}
+.footer-words{
+    padding: 5%;
+    border-bottom: 1px solid gray;
+
+}
+.footer-links nav{
+    /* margin-left: 45%; */
+    
+}
+.footer-links nav a{
+    font-size: 1.8rem;
+}
+.circlee{
+    font-size: 2rem;
+}
+footer p{
+    font-size: 1.5rem;
+} 
+.footer-words button{
+    font-size: 1.5rem;
+    
+} 
+.copyright{
+    font-size: 16px;
+    text-align: center;
+}
+.meee h1{
+    text-align: center;
+}
+.statement{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.mission p{
+    font-size: 20px;
+}
+.mission h2{
+    font-size: 26px;
+}
+.contact{
+    grid-template-columns: 1fr;
+   
+}
+.contact p,a{
+    font-size: 20px;
+}
+}
+/* ----------------start of media query---------------------- */

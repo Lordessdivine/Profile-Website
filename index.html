@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <span class="logo">Lordess_Vyne</span>
+        <div class="menu-btn">
+            <i class="fas fa-bars" style="color: white;"></i>
+        </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">about</a>
+                <a href="contact.html">contact</a>
+            </nav>
+            
+            <div class="icon-wrapper">
+                <a href="https://www.linkedin.com/in/divine-okezu-583377254" target="_blank"><span class="circle"><i class="fab fa-linkedin" ></i></span></a>
+                <a href="https://twitter.com/lordess_vyne" target="_blank"><span class="circle"><i class="fab fa-twitter"></i></span></a>
+                <a href="https://github.com/Lordessdivine/Profile-Webite" target="_blank"><span class="circle"><i class="fab fa-github"></i></span></a>
+            </div>
+    </header>
+    <!-- ------------start of mobile  menu----------- -->
+    
+    <span class="mobile-menu fas fa-bars" id="menu-bar" onclick="openMenu()">    
+    </span>    
+    <!-- <button>
+
+    </button> -->
+    <!-- ------------end of mobile  menu----------- -->
+    <div class="banner">
+        <div class="banner-baby">
+            <h1>I am <br> Okezu Divine</h1>
+            <p>Front-end engineer <br> and a student</p>
+            <a href="contact.html"><button>let's connect</button></a>
+            
+        </div>
+            <div class="card">
+                <img src="images/divine.png" alt="">
+            </div>
+    </div>
+    <div class="me">
+        <h1>what i do</h1>
+    </div>
+    <div class="specializations">
+        <div class="specialties">
+            <img src="images/1.svg" alt="">
+            <h3>Web Development</h3>
+            <p>You can trust me for all of your website development projects, I will deliver the best result</p>
+        </div>
+        <div class="specialties">
+            <img src="images/3.svg" alt="">
+            <h3>ICT Expert</h3>
+            <p>When it comes to ICT, you can trust me with anything involving MS Word, Excel, Power Point, Google Docs, etc</p>
+        </div>
+        <div class="specialties">
+            <img src="images/2.svg" alt="">
+            <h3>Skilled Creative Writer</h3>
+            <p>I am a Skilled creative writer, I write articles, novels, short stories or recreated novels</p>
+        </div>
+    </div>
+    <div class="about">
+        <div class="about-mee">
+            <img src="images/4X6 - Copy.JPG" alt="">
+
+        </div>
+        <div class="about-me">
+            <h3>About Me</h3>
+            <p>I am a web developer and a creative writer. <br> I have full knowledge 
+                of the ICT fundamentals and i was <br> trained by <b> Mr Victor Ugbede</b> at <b><u>VicSoft Innovations.</u></b> <br>
+                I have and over five years of experience as a creative writer.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-words">
+            <h1> Let's Discuss for a project</h1>
+            <p>hire me, I am open for a job</p>
+            <a href="contact.html"><button>Let's connect</button></a> 
+            
+        </div>
+        <div class="footer-links">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">about</a>
+                <a href="contact.html">contact</a>
+            </nav>
+            <div class="footer-font">
+                <a href="https://www.linkedin.com/in/divine-okezu-583377254" target="_blank"><span class="circlee"><i class="fab fa-linkedin" ></i></span></a>
+                <a href="https://twitter.com/lordess_vyne" target="_blank"><span class="circlee"><i class="fab fa-twitter"></i></span></a>
+                <a href="https://github.com/Lordessdivine/Profile-Webite" target="_blank"><span class="circlee"><i class="fab fa-github"></i></span></a>
+            </div>
+        </div>
+        <div class="copyright">Copyright ©2022 All rights reserved | made by lordess_vyne</div> 
+    </footer>
+
+    <script>
+        const btn =document.getElementById("menu-btn")
+
+         document.querySelector(".menu-btn").addEventListener("click", () => document.querySelector("nav").classList.toggle("show"))
+    </script>
+    
+</body>
+</html>
